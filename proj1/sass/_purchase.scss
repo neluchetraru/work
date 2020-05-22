@@ -1,0 +1,51 @@
+.purchase {
+    background: linear-gradient(to right, #231c1a, #4e3427);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    &__text-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 7%;
+        & h2 {
+            font-family: "Raleway", sans-serif;
+            font-size: 2.8rem;
+            font-weight: 400;
+            color: white;
+            margin-bottom: .7rem;
+            & span {
+                color: #c7b299;
+                font-size: 2.8rem;
+                font-family: "Raleway", sans-serif;
+                font-weight: 400;
+            }
+        }
+    }
+
+    &__info {
+        font-family: "Montserrat", sans-serif;
+        font-weight: 200;
+        color: #615855;
+        font-size: 1.8rem;
+    }
+
+    &__btn {
+        font-size: 1.4rem;
+        font-weight: 800;
+        color: white;
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+        background-color: #998675;
+        text-decoration: none;
+        margin-right: 7%;
+        padding: 1rem 2rem;
+        border-radius: .5rem;
+        text-align: center;
+
+        &:hover {
+            transition: all .3s ease-in-out;
+            background-color: rgb(131, 101, 76);
+        }
+    }
+}

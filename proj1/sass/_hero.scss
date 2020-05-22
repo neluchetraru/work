@@ -26,6 +26,7 @@
             font-family: "Raleway", sans-serif;
             font-size: 3.6rem;
             color: white;
+            letter-spacing: 1.3px;
         }
 
         &--title {
@@ -33,14 +34,16 @@
             font-weight: 800;
             font-family: "Raleway", sans-serif;
             color: white;
-            margin: 1rem 0;
+            margin: 1rem 0 2rem;
+            word-spacing: 3px;
+            letter-spacing: -1px;
         }
 
         &--paragraph {
             line-height: 2.4rem;
             font-size: 1.6rem;
             color: white;
-
+            letter-spacing: 1.3px;
             text-align: center;
         }
 
@@ -51,6 +54,12 @@
             position: absolute;
             left: -15rem;
             cursor: pointer;
+
+            @media screen and (max-width: 1000px) {
+                & {
+                    content: '';
+                }
+            }
         }
 
         &::after {
@@ -61,6 +70,38 @@
             right: -15rem;
             cursor: pointer;
 
+            @media screen and (max-width: 1000px) {
+                & {
+                    content: '';
+                }
+            }
+
+        }
+
+        &--btn {
+            margin-top: 4rem;
+            color:white;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            font-family: "Raleway", sans-serif;
+            font-weight: 800;
+            background-color: #998675;
+            border-radius: .5rem;
+            border-bottom: #736357 3px solid;
+            width: 17rem;
+            height: 5.5rem;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            justify-content: center;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                background: transparent;
+                border: 1px solid white;
+                color: #998675;
+
+            }
         }
 
     }
