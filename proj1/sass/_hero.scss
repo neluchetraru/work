@@ -38,13 +38,8 @@
             word-spacing: 3px;
             letter-spacing: -1px;
         }
-
         &--paragraph {
-            line-height: 2.4rem;
-            font-size: 1.6rem;
-            color: white;
-            letter-spacing: 1.3px;
-            text-align: center;
+            color:white;
         }
 
         &::before {
@@ -250,12 +245,5 @@
         & {
             display: block;
         }
-    }
-}
-
-
-@media screen and (max-width: 1000px) {
-    body {
-        overflow-x: hidden;
     }
 }
