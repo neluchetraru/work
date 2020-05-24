@@ -1,0 +1,104 @@
+.features {
+    display: flex;
+    justify-content: center;
+    padding: 0 auto;
+    align-items: flex-start;
+    @media screen and (max-width: 750px) {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    &__illustration {
+        margin-top: 3rem;
+        @media screen and (max-width: 750px) {
+            height: 50vh;
+        }
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin: 6rem 1rem;
+        width: 45%;
+        @media screen and (max-width: 750px) {
+            width: 80%;
+        }
+    }
+
+    &__info {
+        font-size: 1.6rem;
+        line-height: 2.4rem;
+        color: #8c8c8c;
+        letter-spacing: .6px;
+        font-weight: 200;
+        margin: 3rem 0;
+        
+    }
+
+    &__list {
+        list-style: none;
+
+        &--item {
+            font-size: 1.6rem;
+            font-weight: 200;
+            color: #8c8c8c;
+            letter-spacing: .6px;
+            line-height: 2rem;
+            padding: 1rem 4rem;
+            background: url("../assets/images/list-style.png") no-repeat left;
+            
+        }
+    }
+
+    &__counter {
+        // height: 100vh;
+        display: flex;
+        padding: 0 6vw;
+        background: linear-gradient(to right, #231c1a, #4e3427);
+        justify-content: space-between;
+
+        @media screen and (max-width: 720px) {
+            flex-flow: wrap column;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 3rem 2rem;
+
+            &--icon i{
+                
+                font-size: 3rem;
+                color: #c7b299;
+            }
+
+            &--count {
+                font-size: 4.8rem;
+                font-weight: 100;
+                line-height: 3.6rem;
+                color: white;
+                margin: 2rem 0;
+                
+            }
+
+            &--description {
+                text-align: center;
+                font-size: 1.4rem;
+                font-weight: 200;
+                color: #c7b299;
+                text-transform: uppercase;
+
+                
+            }
+            &::after {
+                content:'';
+                width: 55%;
+                background: white;
+                height: 1px;
+                margin-top: 1.5rem;
+            }
+        }
+        
+    }
+}
