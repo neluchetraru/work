@@ -578,7 +578,8 @@ body {
     @media screen and (max-width: 702px) {
       .posts__wrapper {
         flex-direction: column;
-        align-items: center; } }
+        align-items: center;
+        width: 95%; } }
   .posts__controls {
     display: flex; }
     .posts__controls--right::before {
@@ -588,6 +589,7 @@ body {
       border-radius: 50%;
       font-size: 1.9rem;
       font-weight: 100;
+      line-height: 0;
       margin: .7rem;
       width: 2.4rem;
       cursor: pointer;
@@ -604,6 +606,7 @@ body {
       cursor: pointer;
       margin: .7rem;
       font-weight: 100;
+      line-height: 0;
       width: 2.4rem;
       height: 2.4rem;
       display: flex;
@@ -617,6 +620,9 @@ body {
   width: 24vw;
   position: relative;
   margin-bottom: 2rem; }
+  @media screen and (max-width: 702px) {
+    .post {
+      width: 50vw; } }
   .post__photo {
     width: 100%;
     height: 15rem; }
