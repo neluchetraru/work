@@ -1,0 +1,23 @@
+.partners {
+    background: url("../assets/images/partners-bg.png");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(4, max-content);
+        grid-gap: 2rem;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        justify-items: center;
+
+        & img {
+            height: 50%;
+        }
+
+        @media screen and (max-width: 900px) {
+            grid-template-columns: repeat(2, max-content);
+        }
+    }
+}

@@ -22,6 +22,7 @@
     }
     &__controls {
         display: flex;
+        margin-bottom: 3rem;
         &--right::before {
             content:'\02C3';
             color: #c7b299;
